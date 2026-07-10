@@ -2,11 +2,11 @@
 
 An adaptive electric bass practice app. A user picks one musical genre, it locks for 30 days so they build real depth instead of hopping styles, and the app teaches that genre's history, theory, song tabs, and curated video lessons.
 
-**[Try the live clickable prototype →](https://tcohenkl.github.io/bass-practice-case-study/)**
+**[Try the live clickable prototype ->](https://tcohenkl.github.io/bass-practice-case-study/)**
 
 **Role:** Product & UX design (solo)
-**Scope:** Low-fidelity wireframes → high-fidelity clickable prototype
-**Tools:** Figma (visual design) → Claude Code (front-end implementation)
+**Scope:** Low-fidelity wireframes -> high-fidelity clickable prototype
+**Tools:** Figma (visual design) -> Claude Code (front-end implementation)
 **Deliverable:** Portfolio case study
 
 **Why I built this:** I'm inconsistent about practicing bass, so I designed an app that forces me to commit to one genre at a time instead of style-hopping, and pairs practice with the music history behind it, since that context is part of what keeps me engaged. It's a solo project built to sharpen UX/UI skills end-to-end: research framing, wireframes, hi-fi design, and a working interactive build.
@@ -36,14 +36,14 @@ Low-fidelity pass across all eight core screens, structure and hierarchy only, b
 
 The connected flow, demoed with **Soul** locked in:
 
-1. **Genre select** — tap any genre card
-2. **Confirm 30-day lock** — "Continue"
-3. **Skill level** — Beginner, Intermediate, or Advanced
-4. **Home** — streak, today's focus, continue list
-5. **Genre hub** — History / Theory / Songs tabs
-6. **Lesson or song detail** — diagram, tab, YouTube link
-7. **Practice session** — live metronome, rep tracker
-8. **Finish** → back to Home, streak increments
+1. **Genre select** : tap any genre card
+2. **Confirm 30-day lock** : "Continue"
+3. **Skill level** : Beginner, Intermediate, or Advanced
+4. **Home** : streak, today's focus, continue list
+5. **Genre hub** : History / Theory / Songs tabs
+6. **Lesson or song detail** : diagram, tab, YouTube link
+7. **Practice session** : live metronome, rep tracker
+8. **Finish** -> back to Home, streak increments
 
 | | |
 |---|---|
@@ -81,20 +81,20 @@ The `prototype/` folder holds the actual working file (`index.dc.html` + `suppor
 
 ![Per-screen rationale](screenshots/12-ux-methodology-per-screen.png)
 
-- **Onboarding: Genre Select** — Bounded to five options with one-line descriptors so the choice is scannable in seconds (Hick's Law). Selecting shows an immediate checkmark before the user commits via "Continue," feedback before consequence.
-- **Onboarding: Confirm Lock** — A dedicated confirmation step, separate from selection, exists purely to explain the 30-day commitment device with the exact unlock date. Removing ambiguity here builds trust before the constraint kicks in.
-- **Onboarding: Skill Level** — Placed right after the lock, once, because it only needs answering once per 30-day cycle. Three broad bands keep it a snap decision rather than a quiz, and the level then quietly reorders which lessons and songs surface first in the hub.
-- **Home** — Leads with the streak and one pre-decided "Today's Focus" card, not a menu. This is the habit-formation surface, designed so returning users can start a session in one tap with zero decisions.
-- **Genre Hub** — History / Theory / Songs as a segmented control (not a deep menu) keeps the genre's full curriculum reachable in one view, while the lock banner keeps the 30-day commitment visible as ambient status.
-- **Lesson Detail** — One concept per screen: short theory text plus a single fretboard diagram, which follows progressive disclosure. Enough to practice immediately, not a full textbook chapter.
-- **Song Detail** — Tab notation and the curated YouTube link sit side by side so notation (what to play) and performance reference (how it should feel) reinforce each other before practicing.
-- **Practice Session** — Direct manipulation drives the metronome: dragging the BPM slider immediately changes the live beat indicator, an instant feedback loop instead of a settings-then-apply pattern. The rep tracker turns an open-ended practice into a finishable unit of work.
+- **Onboarding: Genre Select** : Bounded to five options with one-line descriptors so the choice is scannable in seconds (Hick's Law). Selecting shows an immediate checkmark before the user commits via "Continue," feedback before consequence.
+- **Onboarding: Confirm Lock** : A dedicated confirmation step, separate from selection, exists purely to explain the 30-day commitment device with the exact unlock date. Removing ambiguity here builds trust before the constraint kicks in.
+- **Onboarding: Skill Level** : Placed right after the lock, once, because it only needs answering once per 30-day cycle. Three broad bands keep it a snap decision rather than a quiz, and the level then quietly reorders which lessons and songs surface first in the hub.
+- **Home** : Leads with the streak and one pre-decided "Today's Focus" card, not a menu. This is the habit-formation surface, designed so returning users can start a session in one tap with zero decisions.
+- **Genre Hub** : History / Theory / Songs as a segmented control (not a deep menu) keeps the genre's full curriculum reachable in one view, while the lock banner keeps the 30-day commitment visible as ambient status.
+- **Lesson Detail** : One concept per screen: short theory text plus a single fretboard diagram, which follows progressive disclosure. Enough to practice immediately, not a full textbook chapter.
+- **Song Detail** : Tab notation and the curated YouTube link sit side by side so notation (what to play) and performance reference (how it should feel) reinforce each other before practicing.
+- **Practice Session** : Direct manipulation drives the metronome: dragging the BPM slider immediately changes the live beat indicator, an instant feedback loop instead of a settings-then-apply pattern. The rep tracker turns an open-ended practice into a finishable unit of work.
 
 ---
 
 ## Files
 
-- `README.md` — this write-up
-- `screenshots/` — exported PNGs of every wireframe and prototype state
-- `prototype/index.dc.html` + `prototype/support.js` — the working clickable prototype
-- `index.html` — redirects the [GitHub Pages link](https://tcohenkl.github.io/bass-practice-case-study/) straight into the prototype
+- `README.md` : this write-up
+- `screenshots/` : exported PNGs of every wireframe and prototype state
+- `prototype/index.dc.html` + `prototype/support.js` : the working clickable prototype
+- `index.html` : redirects the [GitHub Pages link](https://tcohenkl.github.io/bass-practice-case-study/) straight into the prototype
