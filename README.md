@@ -10,13 +10,14 @@ An adaptive electric bass practice app. A user picks one musical genre, it locks
 
 ## 1. Wireframes
 
-Low-fidelity pass across all seven core screens, structure and hierarchy only, before any typography, color, or content decisions.
+Low-fidelity pass across all eight core screens, structure and hierarchy only, before any typography, color, or content decisions.
 
-![Lo-fi wireframes for all seven screens](screenshots/01-lofi-wireframes.png)
+![Lo-fi wireframes for all eight screens](screenshots/01-lofi-wireframes.png)
 
 **What each screen's boxes represent, and why:**
 
-- **Onboarding: Genre Select.** The bold top bar is the screen title, and the thin bar under it is the lock explainer copy, so the 30-day commitment gets read before any choice is made. The grid treats every genre as equal weight, and the solid-outline card marks the single selected state because only one genre can be active at a time. The bottom bar is the primary CTA.
+- **Onboarding: Genre Select.** The bold top bar is the screen title, and the thin bar under it is the lock explainer copy, so the 30-day commitment gets read before any choice is made. The five rows stack in a single column, not a grid, so every genre reads as its own row with a name and description. The solid-outline row marks the single selected state, and the bottom bar is the primary CTA.
+- **Onboarding: Confirm Lock.** The solid dark banner is the "Locking in [Genre]" moment, kept full-bleed so it feels like a distinct milestone rather than another form field. The bordered box beneath the paragraph is the unlock-date callout, and the bottom bar and text link give a primary CTA and a secondary way back to change genre.
 - **Onboarding: Skill Level.** Same title and subtitle pattern as the genre step, so the two onboarding screens read as one flow. The three rows sit in a single column instead of a grid, because skill levels are ordered low to high rather than parallel categories.
 - **Home.** The top bar pairs the wordmark with a streak pill, so returning users see their progress before anything else. The large bordered block is the Today's Focus card, sized bigger than the rows below it because it is the one recommended next action. The three thin rows are the continue-learning queue, kept visually lighter since they're secondary.
 - **Genre Hub.** The solid header block anchors the locked genre and its countdown, so the 30-day commitment stays visible while browsing. The three-segment control swaps between History, Theory, and Songs without leaving the screen, and the rows below restyle per tab because each tab holds a different kind of content.

@@ -9,7 +9,7 @@
 <x-dc>
 <helmet>
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&amp;family=Karla:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
   <style>
     body { margin: 0; background: #EFE0BE; }
     * { box-sizing: border-box; }
@@ -23,7 +23,7 @@
   </style>
 </helmet>
 
-<div style="font-family: 'Karla', sans-serif; background: #EFE0BE; color: #241209; min-height: 100vh; padding-bottom: 100px;">
+<div style="font-family: 'Montserrat', sans-serif; background: #EFE0BE; color: #241209; min-height: 100vh; padding-bottom: 100px;">
 
   <!-- ============ HEADER ============ -->
   <div style="max-width: 1120px; margin: 0 auto; padding: 72px 32px 40px;">
@@ -32,11 +32,11 @@
       
       
     </div>
-    <div style="font-family:'Abril Fatface', serif; font-size:64px; line-height:1.02; color:#241209; margin-bottom:16px;">Tal's BassPractice</div>
-    <div style="font-size:21px; line-height:1.5; max-width:680px; color:#4a2f1c; font-weight:500;">An adaptive electric bass practice app. Pick one genre, lock in for 30 days, and go deep, so the history, theory, tabs, and curated lessons all stay tuned to that one style.</div>
+    <div style="font-family:'Montserrat', sans-serif; font-weight:800; letter-spacing:-0.02em; font-size:60px; line-height:1.05; color:#241209; margin-bottom:16px;">Tal's BassPractice</div>
+    <div style="font-size:21px; line-height:1.5; max-width:680px; color:#4a2f1c; font-weight:500;">An adaptive electric bass practice app. <br><br>Backstory: <br>I'm never consistent with my bass practice, so I wanted to mock-up an app that forces me to stay true to one genre and also provide catered practice. I also enjoy music history so I wanted to include a 'history of the genre' section as I practice the genre. This project was made to practice UX/UI design skills.<br><br>The flow of the app goes like this: Pick one genre, lock in for 30 days, and go deep, so the history, theory, tabs, and curated lessons all stay tuned to that one style.</div>
     <div style="display:flex; gap:28px; margin-top:28px; flex-wrap:wrap; font-size:14px; color:#6b4a30; font-weight:600;">
       
-      <div>Scope: Wireframes -&gt; Clickable prototype</div>
+      <div>Scope: Wireframes and Clickable prototype</div>
       
     </div>
   </div>
@@ -44,10 +44,10 @@
   <!-- ============ SECTION 01: LO-FI WIREFRAMES ============ -->
   <div style="max-width: 1120px; margin: 0 auto; padding: 20px 32px 60px;">
     <div style="display:flex; align-items:baseline; gap:14px; margin-bottom:8px;">
-      <span style="font-family:'Abril Fatface', serif; font-size:15px; color:#9C2B24;">01</span>
-      <div style="font-family:'Abril Fatface', serif; font-size:34px;">Wireframes</div>
+      <span style="font-family:'Montserrat', sans-serif; font-weight:800; font-size:15px; color:#9C2B24;">01</span>
+      <div style="font-family:'Montserrat', sans-serif; font-weight:800; letter-spacing:-0.01em; font-size:32px;">Wireframes</div>
     </div>
-    <div style="font-size:16px; color:#4a2f1c; max-width:640px; margin-bottom:12px;">Low-fidelity pass across all seven core screens: structure and hierarchy only, before any typography, color, or content decisions.</div>
+    <div style="font-size:16px; color:#4a2f1c; max-width:640px; margin-bottom:12px;">Low-fidelity pass across all eight core screens: structure and hierarchy only, before any typography, color, or content decisions.</div>
     <div style="font-size:13px; color:#8a6a48; max-width:680px; margin-bottom:36px;">Each caption below explains what the boxes stand for and why they're placed that way, so the wireframe rationale carries straight into the hi-fi build.</div>
 
     <div style="display:flex; gap:28px; flex-wrap:wrap; justify-content:flex-start;">
@@ -58,21 +58,39 @@
         <div style="width:236px; height:500px; background:#fff; border:2px solid #999; border-radius:10px; padding:16px 12px; position:relative;">
           <div style="width:60%; height:10px; background:#333; border-radius:2px; margin:0 auto 6px;"></div>
           <div style="width:85%; height:14px; background:#bbb; border-radius:2px; margin:0 auto 18px;"></div>
-          <div style="display:grid; grid-template-columns:1fr 1fr; gap:10px;">
-            <div style="height:78px; border:2px dashed #aaa; border-radius:6px;"></div>
-            <div style="height:78px; border:2px solid #333; border-radius:6px;"></div>
-            <div style="height:78px; border:2px dashed #aaa; border-radius:6px;"></div>
-            <div style="height:78px; border:2px dashed #aaa; border-radius:6px;"></div>
-          </div>
-          <div style="height:78px; border:2px dashed #aaa; border-radius:6px; margin-top:10px;"></div>
+          <div style="height:52px; border:2px dashed #aaa; border-radius:6px; margin-bottom:8px;"></div>
+          <div style="height:52px; border:2px solid #333; border-radius:6px; margin-bottom:8px;"></div>
+          <div style="height:52px; border:2px dashed #aaa; border-radius:6px; margin-bottom:8px;"></div>
+          <div style="height:52px; border:2px dashed #aaa; border-radius:6px; margin-bottom:8px;"></div>
+          <div style="height:52px; border:2px dashed #aaa; border-radius:6px;"></div>
           <div style="position:absolute; bottom:16px; left:12px; right:12px; height:40px; background:#333; border-radius:6px;"></div>
         </div>
-        <div style="font-size:12px; color:#6b4a30; line-height:1.5; margin-top:10px;">Bold top bar is the screen title, and the thin bar under it is the lock explainer copy, so the 30-day commitment gets read before any choice is made. The grid treats every genre as equal weight, and the solid-outline card marks the single selected state because only one genre can be active at a time. The bottom bar is the primary CTA.</div>
+        <div style="font-size:12px; color:#6b4a30; line-height:1.5; margin-top:10px;">Bold top bar is the screen title, and the thin bar under it is the lock explainer copy, so the 30-day commitment gets read before any choice is made. The five rows stack in a single column, not a grid, so every genre reads as its own row with a name and description rather than a boxed-in tile. The solid-outline row marks the single selected state, and the bottom bar is the primary CTA.</div>
+      </div>
+
+      <!-- LOFI 1A: Confirm Lock -->
+      <div style="width:236px;">
+        <div style="font-size:13px; font-weight:700; margin-bottom:10px; color:#4a2f1c;">02 · Onboarding: Confirm Lock</div>
+        <div style="width:236px; height:500px; background:#fff; border:2px solid #999; border-radius:10px; padding:0; position:relative; overflow:hidden;">
+          <div style="height:150px; background:#666; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:8px;">
+            <div style="width:70px; height:8px; background:rgba(255,255,255,0.5); border-radius:2px;"></div>
+            <div style="width:110px; height:20px; background:#fff; border-radius:2px;"></div>
+          </div>
+          <div style="padding:16px 12px;">
+            <div style="width:100%; height:8px; background:#ccc; border-radius:2px; margin-bottom:6px;"></div>
+            <div style="width:100%; height:8px; background:#ccc; border-radius:2px; margin-bottom:6px;"></div>
+            <div style="width:65%; height:8px; background:#ccc; border-radius:2px; margin-bottom:16px;"></div>
+            <div style="height:56px; border:2px solid #333; border-radius:8px; margin-bottom:20px;"></div>
+            <div style="height:40px; background:#333; border-radius:6px; margin-bottom:12px;"></div>
+            <div style="width:50%; height:8px; background:#bbb; border-radius:2px; margin:0 auto;"></div>
+          </div>
+        </div>
+        <div style="font-size:12px; color:#6b4a30; line-height:1.5; margin-top:10px;">The solid dark banner is the "Locking in [Genre]" block, kept full-bleed so it feels like a distinct milestone rather than another form field. The bordered box beneath the paragraph is the unlock-date callout, and the bottom bar and text link give a primary CTA and a secondary way back to change genre.</div>
       </div>
 
       <!-- LOFI 1B: Skill Level -->
       <div style="width:236px;">
-        <div style="font-size:13px; font-weight:700; margin-bottom:10px; color:#4a2f1c;">02 · Onboarding: Skill Level</div>
+        <div style="font-size:13px; font-weight:700; margin-bottom:10px; color:#4a2f1c;">03 · Onboarding: Skill Level</div>
         <div style="width:236px; height:500px; background:#fff; border:2px solid #999; border-radius:10px; padding:16px 12px; position:relative;">
           <div style="width:55%; height:10px; background:#333; border-radius:2px; margin:0 auto 6px;"></div>
           <div style="width:85%; height:14px; background:#bbb; border-radius:2px; margin:0 auto 18px;"></div>
@@ -86,7 +104,7 @@
 
       <!-- LOFI 2: Home -->
       <div style="width:236px;">
-        <div style="font-size:13px; font-weight:700; margin-bottom:10px; color:#4a2f1c;">03 · Home</div>
+        <div style="font-size:13px; font-weight:700; margin-bottom:10px; color:#4a2f1c;">04 · Home</div>
         <div style="width:236px; height:500px; background:#fff; border:2px solid #999; border-radius:10px; padding:16px 12px; position:relative;">
           <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:16px;">
             <div style="width:90px; height:12px; background:#333; border-radius:2px;"></div>
@@ -106,7 +124,7 @@
 
       <!-- LOFI 3: Genre Hub -->
       <div style="width:236px;">
-        <div style="font-size:13px; font-weight:700; margin-bottom:10px; color:#4a2f1c;">04 · Genre Hub</div>
+        <div style="font-size:13px; font-weight:700; margin-bottom:10px; color:#4a2f1c;">05 · Genre Hub</div>
         <div style="width:236px; height:500px; background:#fff; border:2px solid #999; border-radius:10px; padding:0; position:relative; overflow:hidden;">
           <div style="height:90px; background:#ddd; border-bottom:2px solid #999;"></div>
           <div style="display:flex; gap:6px; padding:12px;">
@@ -127,14 +145,15 @@
 
       <!-- LOFI 4: Lesson detail -->
       <div style="width:236px;">
-        <div style="font-size:13px; font-weight:700; margin-bottom:10px; color:#4a2f1c;">05 · Lesson Detail</div>
+        <div style="font-size:13px; font-weight:700; margin-bottom:10px; color:#4a2f1c;">06 · Lesson Detail</div>
         <div style="width:236px; height:500px; background:#fff; border:2px solid #999; border-radius:10px; padding:16px 12px; position:relative;">
           <div style="width:20px; height:20px; border:2px solid #333; border-radius:50%; margin-bottom:14px;"></div>
+          <div style="width:56px; height:16px; background:#333; border-radius:8px; margin-bottom:10px;"></div>
           <div style="width:75%; height:14px; background:#333; border-radius:2px; margin-bottom:10px;"></div>
           <div style="width:100%; height:8px; background:#ccc; border-radius:2px; margin-bottom:6px;"></div>
           <div style="width:100%; height:8px; background:#ccc; border-radius:2px; margin-bottom:6px;"></div>
           <div style="width:60%; height:8px; background:#ccc; border-radius:2px; margin-bottom:18px;"></div>
-          <div style="height:140px; border:2px solid #333; border-radius:6px; background:repeating-linear-gradient(90deg,#eee,#eee 20px,#fff 20px,#fff 40px); margin-bottom:16px;"></div>
+          <div style="height:120px; border:2px solid #333; border-radius:6px; background:repeating-linear-gradient(90deg,#eee,#eee 20px,#fff 20px,#fff 40px); margin-bottom:16px;"></div>
           <div style="position:absolute; bottom:16px; left:12px; right:12px; height:40px; background:#333; border-radius:6px;"></div>
         </div>
         <div style="font-size:12px; color:#6b4a30; line-height:1.5; margin-top:10px;">The circle is the back button, and the title bar names the lesson. The three short lines stand for the theory paragraph, kept brief so it reads in one pass. The textured box is the fretboard diagram, placed after the text because the visual should reinforce the explanation, not replace it. The bottom bar starts a practice session on this exact lesson.</div>
@@ -142,7 +161,7 @@
 
       <!-- LOFI 5: Song detail -->
       <div style="width:236px;">
-        <div style="font-size:13px; font-weight:700; margin-bottom:10px; color:#4a2f1c;">06 · Song Detail</div>
+        <div style="font-size:13px; font-weight:700; margin-bottom:10px; color:#4a2f1c;">07 · Song Detail</div>
         <div style="width:236px; height:500px; background:#fff; border:2px solid #999; border-radius:10px; padding:16px 12px; position:relative;">
           <div style="width:20px; height:20px; border:2px solid #333; border-radius:50%; margin-bottom:12px;"></div>
           <div style="width:70%; height:13px; background:#333; border-radius:2px; margin-bottom:6px;"></div>
@@ -152,17 +171,18 @@
             <div style="width:40px; height:16px; border:1px solid #999; border-radius:10px;"></div>
             <div style="width:40px; height:16px; border:1px solid #999; border-radius:10px;"></div>
           </div>
-          <div style="height:70px; border:2px solid #333; border-radius:6px; margin-bottom:12px;"></div>
-          <div style="height:80px; border:2px dashed #aaa; border-radius:6px; display:flex; align-items:center; justify-content:center;">
+          <div style="height:60px; border:2px solid #333; border-radius:6px; margin-bottom:12px;"></div>
+          <div style="height:64px; border:2px dashed #aaa; border-radius:6px; display:flex; align-items:center; justify-content:center; margin-bottom:12px;">
             <div style="width:0; height:0; border-top:10px solid transparent; border-bottom:10px solid transparent; border-left:16px solid #999;"></div>
           </div>
+          <div style="position:absolute; bottom:16px; left:12px; right:12px; height:40px; background:#333; border-radius:6px;"></div>
         </div>
-        <div style="font-size:12px; color:#6b4a30; line-height:1.5; margin-top:10px;">Same back button and title pattern as Lesson Detail, so the two detail screens feel related. The three small chips carry key, tempo, and difficulty because those numbers matter before you start playing. The solid box is the tab notation, and the dashed box with a play triangle is the curated YouTube reference, kept visually distinct since it links outside the app.</div>
+        <div style="font-size:12px; color:#6b4a30; line-height:1.5; margin-top:10px;">Same back button and title pattern as Lesson Detail, so the two detail screens feel related. The three small chips carry key, tempo, and difficulty because those numbers matter before you start playing. The solid box is the tab notation, and the dashed box with a play triangle is the curated YouTube reference, kept visually distinct since it links outside the app. The bottom bar is the same practice CTA pattern as Lesson Detail.</div>
       </div>
 
       <!-- LOFI 6: Practice session -->
       <div style="width:236px;">
-        <div style="font-size:13px; font-weight:700; margin-bottom:10px; color:#4a2f1c;">07 · Practice Session</div>
+        <div style="font-size:13px; font-weight:700; margin-bottom:10px; color:#4a2f1c;">08 · Practice Session</div>
         <div style="width:236px; height:500px; background:#fff; border:2px solid #999; border-radius:10px; padding:16px 12px; position:relative;">
           <div style="width:20px; height:20px; border:2px solid #333; border-radius:50%; margin-bottom:14px;"></div>
           <div style="width:80px; height:36px; background:#333; border-radius:4px; margin:0 auto 10px;"></div>
@@ -173,11 +193,25 @@
             <div style="width:10px; height:10px; border-radius:50%; border:2px solid #aaa;"></div>
           </div>
           <div style="height:6px; background:#ccc; border-radius:3px; margin-bottom:18px;"></div>
-          <div style="height:60px; border:2px solid #333; border-radius:6px; background:repeating-linear-gradient(90deg,#eee,#eee 16px,#fff 16px,#fff 32px); margin-bottom:16px;"></div>
-          <div style="width:60%; height:10px; background:#bbb; border-radius:2px; margin:0 auto 10px;"></div>
+          <div style="height:56px; border:2px solid #333; border-radius:6px; background:repeating-linear-gradient(90deg,#eee,#eee 16px,#fff 16px,#fff 32px); margin-bottom:14px;"></div>
+          <div style="display:flex; align-items:center; justify-content:space-between; border:1px solid #aaa; border-radius:6px; padding:8px 10px; margin-bottom:8px;">
+            <div style="width:18px; height:18px; border-radius:50%; border:2px solid #333;"></div>
+            <div style="width:70px; height:10px; background:#bbb; border-radius:2px;"></div>
+            <div style="width:18px; height:18px; border-radius:50%; background:#333;"></div>
+          </div>
+          <div style="display:flex; gap:4px; margin-bottom:16px;">
+            <div style="flex:1; height:5px; background:#333; border-radius:2px;"></div>
+            <div style="flex:1; height:5px; background:#333; border-radius:2px;"></div>
+            <div style="flex:1; height:5px; background:#333; border-radius:2px;"></div>
+            <div style="flex:1; height:5px; background:#ddd; border-radius:2px;"></div>
+            <div style="flex:1; height:5px; background:#ddd; border-radius:2px;"></div>
+            <div style="flex:1; height:5px; background:#ddd; border-radius:2px;"></div>
+            <div style="flex:1; height:5px; background:#ddd; border-radius:2px;"></div>
+            <div style="flex:1; height:5px; background:#ddd; border-radius:2px;"></div>
+          </div>
           <div style="position:absolute; bottom:16px; left:12px; right:12px; height:40px; background:#333; border-radius:6px;"></div>
         </div>
-        <div style="font-size:12px; color:#6b4a30; line-height:1.5; margin-top:10px;">The large dark block is the live BPM readout, and the four dots under it are the beat indicator, so tempo is felt and not just read as a number. The thin bar is the BPM slider. The textured box repeats the tab snippet so no scrolling is needed mid-rep, and the bottom bar ends the session and returns to Home.</div>
+        <div style="font-size:12px; color:#6b4a30; line-height:1.5; margin-top:10px;">The large dark block is the live BPM readout, and the four dots under it are the beat indicator, so tempo is felt and not just read as a number. The thin bar is the BPM slider. The textured box repeats the tab snippet so no scrolling is needed mid-rep. Below it, the plus/minus row and the row of eight dots are the rep tracker, and the bottom bar ends the session and returns to Home.</div>
       </div>
 
     </div>
@@ -186,17 +220,17 @@
   <!-- ============ SECTION 02: HI-FI PROTOTYPE ============ -->
   <div style="max-width: 1120px; margin: 0 auto; padding: 40px 32px 60px;">
     <div style="display:flex; align-items:baseline; gap:14px; margin-bottom:8px;">
-      <span style="font-family:'Abril Fatface', serif; font-size:15px; color:#9C2B24;">02</span>
-      <div style="font-family:'Abril Fatface', serif; font-size:34px;">Hi-fi clickable prototype</div>
+      <span style="font-family:'Montserrat', sans-serif; font-weight:800; font-size:15px; color:#9C2B24;">02</span>
+      <div style="font-family:'Montserrat', sans-serif; font-weight:800; letter-spacing:-0.01em; font-size:32px;">Hi-fi clickable prototype (Screen visuals created in Figma, implementation done using claude)</div>
     </div>
-    <div style="font-size:16px; color:#4a2f1c; max-width:640px; margin-bottom:8px;">Tap through the real flow: pick a genre → confirm the 30-day lock → set a skill level → home → genre hub → a lesson or song → a practice session with a working metronome.</div>
+    <div style="font-size:16px; color:#4a2f1c; max-width:640px; margin-bottom:8px;">Tap through the real flow: pick a genre -&gt; confirm the 30-day lock -&gt; set a skill level -&gt; home -&gt; genre hub -&gt; a lesson or song -&gt; a practice session with a working metronome.</div>
     <div style="font-size:13px; color:#8a6a48; margin-bottom:32px;">Demoed with <strong>Soul</strong> content locked in.</div>
 
     <div style="display:flex; gap:48px; align-items:flex-start; justify-content:center; flex-wrap:wrap;">
 
       <!-- PHONE FRAME -->
       <div style="width:340px; flex-shrink:0;">
-        <div style="width:340px; height:716px; background:#241209; border-radius:46px; padding:12px; box-shadow:0 30px 60px rgba(36,18,9,0.35);">
+        <div style="width:340px; height:716px; background:#241209; border-radius:46px; padding:12px; box-shadow:0 14px 28px rgba(36,18,9,0.28);">
           <div style="width:100%; height:100%; background:#FBF1DC; border-radius:36px; overflow:hidden; position:relative; display:flex; flex-direction:column;">
 
             <!-- notch -->
@@ -213,7 +247,7 @@
               <!-- ============ SCREEN: GENRE SELECT ============ -->
               <sc-if value="{{ screenSelect }}" hint-placeholder-val="{{ true }}">
                 <div style="padding:22px 20px 30px;" data-screen-label="Onboarding: Genre Select">
-                  <div style="font-family:'Abril Fatface', serif; font-size:26px; margin-bottom:6px;">Pick your genre</div>
+                  <div style="font-family:'Montserrat', sans-serif; font-weight:800; letter-spacing:-0.01em; font-size:24px; margin-bottom:6px;">Pick your genre</div>
                   <div style="font-size:14px; color:#6b4a30; line-height:1.5; margin-bottom:22px;">You'll go deep on one style. It locks for 30 days before you can switch, so choose the one you actually want to sound like.</div>
 
                   <div style="display:flex; flex-direction:column; gap:10px;">
@@ -240,7 +274,7 @@
                 <div data-screen-label="Onboarding: Confirm Lock" style="height:100%; display:flex; flex-direction:column;">
                   <div style="background:{{ genreColor }}; color:#FBF1DC; padding:30px 20px 40px; text-align:center;">
                     <div style="font-size:12px; letter-spacing:0.14em; text-transform:uppercase; opacity:0.8; margin-bottom:10px;">Locking in</div>
-                    <div style="font-family:'Abril Fatface', serif; font-size:40px;">{{ genreName }}</div>
+                    <div style="font-family:'Montserrat', sans-serif; font-weight:800; letter-spacing:-0.01em; font-size:36px;">{{ genreName }}</div>
                   </div>
                   <div style="padding:26px 22px; flex:1;">
                     <div style="font-size:14px; line-height:1.6; color:#3a2716; margin-bottom:18px;">{{ genreDesc }} You'll study {{ genreName }} exclusively for the next 30 days, because that's long enough to build real technique instead of hopping styles every other day.</div>
@@ -260,7 +294,7 @@
               <!-- ============ SCREEN: SKILL LEVEL ============ -->
               <sc-if value="{{ screenSkill }}">
                 <div data-screen-label="Onboarding: Skill Level" style="padding:22px 20px 30px;">
-                  <div style="font-family:'Abril Fatface', serif; font-size:26px; margin-bottom:6px;">How do you play today?</div>
+                  <div style="font-family:'Montserrat', sans-serif; font-weight:800; letter-spacing:-0.01em; font-size:24px; margin-bottom:6px;">How do you play today?</div>
                   <div style="font-size:14px; color:#6b4a30; line-height:1.5; margin-bottom:22px;">This tunes which lessons and songs surface first in your {{ genreName }} hub. You can always practice anything, no matter your level.</div>
 
                   <div style="display:flex; flex-direction:column; gap:10px;">
@@ -285,7 +319,7 @@
               <sc-if value="{{ screenHome }}">
                 <div data-screen-label="Home" style="padding:0 20px 30px;">
                   <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:20px;">
-                    <div style="font-family:'Abril Fatface', serif; font-size:22px;">Tal's BassPractice</div>
+                    <div style="font-family:'Montserrat', sans-serif; font-weight:800; letter-spacing:-0.01em; font-size:20px;">Tal's BassPractice</div>
                     <div style="display:flex; align-items:center; gap:6px; background:#fff; padding:7px 12px; border-radius:100px;">
                       <span style="font-size:14px;">🔥</span>
                       <span style="font-weight:800; font-size:14px;">{{ streak }}</span>
@@ -339,7 +373,7 @@
                 <div data-screen-label="Genre Hub" style="padding-bottom:30px;">
                   <div style="background:{{ genreColor }}; color:#FBF1DC; padding:0 20px 20px;">
                     <div onClick="{{ goHome }}" style="font-size:20px; margin-bottom:10px; cursor:pointer; opacity:0.85;">‹</div>
-                    <div style="font-family:'Abril Fatface', serif; font-size:32px; margin-bottom:6px;">{{ genreName }}</div>
+                    <div style="font-family:'Montserrat', sans-serif; font-weight:800; letter-spacing:-0.01em; font-size:28px; margin-bottom:6px;">{{ genreName }}</div>
                     <div style="display:flex; align-items:center; gap:8px; font-size:12px; font-weight:700;">
                       <span style="background:rgba(0,0,0,0.22); padding:4px 10px; border-radius:100px;">Locked</span>
                       <span style="opacity:0.85;">Unlocks in 19 days · Aug 9</span>
@@ -437,7 +471,7 @@
 
                   <div style="font-size:12px; text-transform:uppercase; letter-spacing:0.1em; color:#8a6a48; font-weight:700; margin-bottom:8px;">Curated lesson</div>
                   <a href="{{ activeSong.ytUrl }}" target="_blank" style="text-decoration:none; display:block; margin-bottom:22px;">
-                    <div style="background:linear-gradient(135deg, {{ genreColor }}, #241209); border-radius:14px; height:100px; display:flex; align-items:center; justify-content:center; margin-bottom:8px; position:relative;">
+                    <div style="background:{{ genreColor }}; border-radius:14px; height:100px; display:flex; align-items:center; justify-content:center; margin-bottom:8px; position:relative;">
                       <div style="width:0; height:0; border-top:11px solid transparent; border-bottom:11px solid transparent; border-left:18px solid #FBF1DC;"></div>
                     </div>
                     <div style="font-size:13px; font-weight:700; color:#241209;">Watch a performance breakdown on YouTube ↗</div>
@@ -502,7 +536,7 @@
           <div>5. Genre hub <span style="color:#8a6a48; font-weight:500;">: History / Theory / Songs tabs</span></div>
           <div>6. Lesson or song detail <span style="color:#8a6a48; font-weight:500;">: diagram, tab, YouTube link</span></div>
           <div>7. Practice session <span style="color:#8a6a48; font-weight:500;">: live metronome, rep tracker</span></div>
-          <div>8. Finish → back to Home <span style="color:#8a6a48; font-weight:500;">: streak increments</span></div>
+          <div>8. Finish -&gt; back to Home <span style="color: rgb(138, 106, 72); font-weight: 500;">: streak increments</span></div>
         </div>
         <div style="margin-top:24px; font-size:13px; color:#6b4a30; line-height:1.6;">The metronome and BPM slider are fully live, so drag the slider and hit play to hear the tempo change reflected in the beat indicator.</div>
       </div>
@@ -513,8 +547,8 @@
   <!-- ============ SECTION 03: UX METHODOLOGY ============ -->
   <div style="max-width: 1120px; margin: 0 auto; padding: 40px 32px 100px;">
     <div style="display:flex; align-items:baseline; gap:14px; margin-bottom:8px;">
-      <span style="font-family:'Abril Fatface', serif; font-size:15px; color:#9C2B24;">03</span>
-      <div style="font-family:'Abril Fatface', serif; font-size:34px;">Rationale behind the different Screens</div>
+      <span style="font-family:'Montserrat', sans-serif; font-weight:800; font-size:15px; color:#9C2B24;">03</span>
+      <div style="font-family:'Montserrat', sans-serif; font-weight:800; letter-spacing:-0.01em; font-size:32px;">Rationale behind the different Screens</div>
     </div>
     <div style="font-size:16px; color:#4a2f1c; max-width:680px; margin-bottom:36px;">The principles behind each screen's design decisions.</div>
 
