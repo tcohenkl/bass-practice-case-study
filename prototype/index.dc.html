@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&amp;family=Karla:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; background: #EFE0BE; }
+    * { box-sizing: border-box; }
+    ::-webkit-scrollbar { width: 0; height: 0; }
+    a { color: #9C2B24; }
+    a:hover { color: #241209; }
+    input[type="range"] { -webkit-appearance: none; appearance: none; background: transparent; }
+    input[type="range"]::-webkit-slider-runnable-track { height: 6px; border-radius: 3px; background: rgba(36,18,9,0.15); }
+    input[type="range"]::-webkit-slider-thumb { -webkit-appearance: none; width: 22px; height: 22px; border-radius: 50%; background: #9C2B24; border: 3px solid #FBF1DC; margin-top: -8px; cursor: pointer; }
+    @keyframes pulse { 0% { transform: scale(1); } 50% { transform: scale(1.35); } 100% { transform: scale(1); } }
+  </style>
+</helmet>
+
+<div style="font-family: 'Karla', sans-serif; background: #EFE0BE; color: #241209; min-height: 100vh; padding-bottom: 100px;">
+
+  <!-- ============ HEADER ============ -->
+  <div style="max-width: 1120px; margin: 0 auto; padding: 72px 32px 40px;">
+    <div style="display:flex; gap:10px; flex-wrap:wrap; margin-bottom:22px;">
+      
+      
+      
+    </div>
+    <div style="font-family:'Abril Fatface', serif; font-size:64px; line-height:1.02; color:#241209; margin-bottom:16px;">Tal's BassPractice</div>
+    <div style="font-size:21px; line-height:1.5; max-width:680px; color:#4a2f1c; font-weight:500;">An adaptive electric bass practice app. Pick one genre, lock in for 30 days, and go deep, so the history, theory, tabs, and curated lessons all stay tuned to that one style.</div>
+    <div style="display:flex; gap:28px; margin-top:28px; flex-wrap:wrap; font-size:14px; color:#6b4a30; font-weight:600;">
+      
+      <div>Scope: Wireframes -&gt; Clickable prototype</div>
+      
+    </div>
+  </div>
+
+  <!-- ============ SECTION 01: LO-FI WIREFRAMES ============ -->
+  <div style="max-width: 1120px; margin: 0 auto; padding: 20px 32px 60px;">
+    <div style="display:flex; align-items:baseline; gap:14px; margin-bottom:8px;">
+      <span style="font-family:'Abril Fatface', serif; font-size:15px; color:#9C2B24;">01</span>
+      <div style="font-family:'Abril Fatface', serif; font-size:34px;">Wireframes</div>
+    </div>
+    <div style="font-size:16px; color:#4a2f1c; max-width:640px; margin-bottom:12px;">Low-fidelity pass across all seven core screens: structure and hierarchy only, before any typography, color, or content decisions.</div>
+    <div style="font-size:13px; color:#8a6a48; max-width:680px; margin-bottom:36px;">Each caption below explains what the boxes stand for and why they're placed that way, so the wireframe rationale carries straight into the hi-fi build.</div>
+
+    <div style="display:flex; gap:28px; flex-wrap:wrap; justify-content:flex-start;">
+
+      <!-- LOFI 1: Onboarding -->
+      <div style="width:236px;">
+        <div style="font-size:13px; font-weight:700; margin-bottom:10px; color:#4a2f1c;">01 · Onboarding: Genre Select</div>
+        <div style="width:236px; height:500px; background:#fff; border:2px solid #999; border-radius:10px; padding:16px 12px; position:relative;">
+          <div style="width:60%; height:10px; background:#333; border-radius:2px; margin:0 auto 6px;"></div>
+          <div style="width:85%; height:14px; background:#bbb; border-radius:2px; margin:0 auto 18px;"></div>
+          <div style="display:grid; grid-template-columns:1fr 1fr; gap:10px;">
+            <div style="height:78px; border:2px dashed #aaa; border-radius:6px;"></div>
+            <div style="height:78px; border:2px solid #333; border-radius:6px;"></div>
+            <div style="height:78px; border:2px dashed #aaa; border-radius:6px;"></div>
+            <div style="height:78px; border:2px dashed #aaa; border-radius:6px;"></div>
+          </div>
+          <div style="height:78px; border:2px dashed #aaa; border-radius:6px; margin-top:10px;"></div>
+          <div style="position:absolute; bottom:16px; left:12px; right:12px; height:40px; background:#333; border-radius:6px;"></div>
+        </div>
+        <div style="font-size:12px; color:#6b4a30; line-height:1.5; margin-top:10px;">Bold top bar is the screen title, and the thin bar under it is the lock explainer copy, so the 30-day commitment gets read before any choice is made. The grid treats every genre as equal weight, and the solid-outline card marks the single selected state because only one genre can be active at a time. The bottom bar is the primary CTA.</div>
+      </div>
+
+      <!-- LOFI 1B: Skill Level -->
+      <div style="width:236px;">
+        <div style="font-size:13px; font-weight:700; margin-bottom:10px; color:#4a2f1c;">02 · Onboarding: Skill Level</div>
+        <div style="width:236px; height:500px; background:#fff; border:2px solid #999; border-radius:10px; padding:16px 12px; position:relative;">
+          <div style="width:55%; height:10px; background:#333; border-radius:2px; margin:0 auto 6px;"></div>
+          <div style="width:85%; height:14px; background:#bbb; border-radius:2px; margin:0 auto 18px;"></div>
+          <div style="height:56px; border:2px solid #333; border-radius:6px; margin-bottom:10px;"></div>
+          <div style="height:56px; border:2px dashed #aaa; border-radius:6px; margin-bottom:10px;"></div>
+          <div style="height:56px; border:2px dashed #aaa; border-radius:6px;"></div>
+          <div style="position:absolute; bottom:16px; left:12px; right:12px; height:40px; background:#333; border-radius:6px;"></div>
+        </div>
+        <div style="font-size:12px; color:#6b4a30; line-height:1.5; margin-top:10px;">Same title and subtitle pattern as the genre step, so the two onboarding screens read as one flow. The three rows sit in a single column instead of a grid, because skill levels are ordered low to high rather than parallel categories. This is what lets lesson and song difficulty adapt later without adding a settings menu.</div>
+      </div>
+
+      <!-- LOFI 2: Home -->
+      <div style="width:236px;">
+        <div style="font-size:13px; font-weight:700; margin-bottom:10px; color:#4a2f1c;">03 · Home</div>
+        <div style="width:236px; height:500px; background:#fff; border:2px solid #999; border-radius:10px; padding:16px 12px; position:relative;">
+          <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:16px;">
+            <div style="width:90px; height:12px; background:#333; border-radius:2px;"></div>
+            <div style="width:34px; height:22px; border:2px solid #333; border-radius:12px;"></div>
+          </div>
+          <div style="height:110px; border:2px solid #333; border-radius:8px; margin-bottom:14px; padding:8px;">
+            <div style="width:70%; height:8px; background:#999; border-radius:2px; margin-bottom:6px;"></div>
+            <div style="width:40%; height:8px; background:#ccc; border-radius:2px;"></div>
+          </div>
+          <div style="width:50%; height:10px; background:#bbb; border-radius:2px; margin-bottom:10px;"></div>
+          <div style="height:44px; border:1px solid #aaa; border-radius:6px; margin-bottom:8px;"></div>
+          <div style="height:44px; border:1px solid #aaa; border-radius:6px; margin-bottom:8px;"></div>
+          <div style="height:44px; border:1px solid #aaa; border-radius:6px;"></div>
+        </div>
+        <div style="font-size:12px; color:#6b4a30; line-height:1.5; margin-top:10px;">Top bar pairs the wordmark with a streak pill, so returning users see their progress before anything else. The large bordered block is the Today's Focus card, sized bigger than the rows below it because it is the one recommended next action. The three thin rows are the continue-learning queue, kept visually lighter since they're secondary to the focus card.</div>
+      </div>
+
+      <!-- LOFI 3: Genre Hub -->
+      <div style="width:236px;">
+        <div style="font-size:13px; font-weight:700; margin-bottom:10px; color:#4a2f1c;">04 · Genre Hub</div>
+        <div style="width:236px; height:500px; background:#fff; border:2px solid #999; border-radius:10px; padding:0; position:relative; overflow:hidden;">
+          <div style="height:90px; background:#ddd; border-bottom:2px solid #999;"></div>
+          <div style="display:flex; gap:6px; padding:12px;">
+            <div style="flex:1; height:26px; border:2px solid #333; border-radius:14px;"></div>
+            <div style="flex:1; height:26px; border:2px solid #aaa; border-radius:14px;"></div>
+            <div style="flex:1; height:26px; border:2px solid #aaa; border-radius:14px;"></div>
+          </div>
+          <div style="padding:0 12px;">
+            <div style="width:100%; height:8px; background:#ccc; border-radius:2px; margin-bottom:8px;"></div>
+            <div style="width:80%; height:8px; background:#ccc; border-radius:2px; margin-bottom:16px;"></div>
+            <div style="height:40px; border:1px solid #aaa; border-radius:6px; margin-bottom:8px;"></div>
+            <div style="height:40px; border:1px solid #aaa; border-radius:6px; margin-bottom:8px;"></div>
+            <div style="height:40px; border:1px solid #aaa; border-radius:6px;"></div>
+          </div>
+        </div>
+        <div style="font-size:12px; color:#6b4a30; line-height:1.5; margin-top:10px;">The solid header block anchors the locked genre and its countdown, so the 30-day commitment stays visible while browsing. The three-segment control swaps between History, Theory, and Songs without leaving the screen, and the rows below restyle per tab because each tab holds a different kind of content.</div>
+      </div>
+
+      <!-- LOFI 4: Lesson detail -->
+      <div style="width:236px;">
+        <div style="font-size:13px; font-weight:700; margin-bottom:10px; color:#4a2f1c;">05 · Lesson Detail</div>
+        <div style="width:236px; height:500px; background:#fff; border:2px solid #999; border-radius:10px; padding:16px 12px; position:relative;">
+          <div style="width:20px; height:20px; border:2px solid #333; border-radius:50%; margin-bottom:14px;"></div>
+          <div style="width:75%; height:14px; background:#333; border-radius:2px; margin-bottom:10px;"></div>
+          <div style="width:100%; height:8px; background:#ccc; border-radius:2px; margin-bottom:6px;"></div>
+          <div style="width:100%; height:8px; background:#ccc; border-radius:2px; margin-bottom:6px;"></div>
+          <div style="width:60%; height:8px; background:#ccc; border-radius:2px; margin-bottom:18px;"></div>
+          <div style="height:140px; border:2px solid #333; border-radius:6px; background:repeating-linear-gradient(90deg,#eee,#eee 20px,#fff 20px,#fff 40px); margin-bottom:16px;"></div>
+          <div style="position:absolute; bottom:16px; left:12px; right:12px; height:40px; background:#333; border-radius:6px;"></div>
+        </div>
+        <div style="font-size:12px; color:#6b4a30; line-height:1.5; margin-top:10px;">The circle is the back button, and the title bar names the lesson. The three short lines stand for the theory paragraph, kept brief so it reads in one pass. The textured box is the fretboard diagram, placed after the text because the visual should reinforce the explanation, not replace it. The bottom bar starts a practice session on this exact lesson.</div>
+      </div>
+
+      <!-- LOFI 5: Song detail -->
+      <div style="width:236px;">
+        <div style="font-size:13px; font-weight:700; margin-bottom:10px; color:#4a2f1c;">06 · Song Detail</div>
+        <div style="width:236px; height:500px; background:#fff; border:2px solid #999; border-radius:10px; padding:16px 12px; position:relative;">
+          <div style="width:20px; height:20px; border:2px solid #333; border-radius:50%; margin-bottom:12px;"></div>
+          <div style="width:70%; height:13px; background:#333; border-radius:2px; margin-bottom:6px;"></div>
+          <div style="width:45%; height:9px; background:#aaa; border-radius:2px; margin-bottom:12px;"></div>
+          <div style="display:flex; gap:6px; margin-bottom:12px;">
+            <div style="width:40px; height:16px; border:1px solid #999; border-radius:10px;"></div>
+            <div style="width:40px; height:16px; border:1px solid #999; border-radius:10px;"></div>
+            <div style="width:40px; height:16px; border:1px solid #999; border-radius:10px;"></div>
+          </div>
+          <div style="height:70px; border:2px solid #333; border-radius:6px; margin-bottom:12px;"></div>
+          <div style="height:80px; border:2px dashed #aaa; border-radius:6px; display:flex; align-items:center; justify-content:center;">
+            <div style="width:0; height:0; border-top:10px solid transparent; border-bottom:10px solid transparent; border-left:16px solid #999;"></div>
+          </div>
+        </div>
+        <div style="font-size:12px; color:#6b4a30; line-height:1.5; margin-top:10px;">Same back button and title pattern as Lesson Detail, so the two detail screens feel related. The three small chips carry key, tempo, and difficulty because those numbers matter before you start playing. The solid box is the tab notation, and the dashed box with a play triangle is the curated YouTube reference, kept visually distinct since it links outside the app.</div>
+      </div>
+
+      <!-- LOFI 6: Practice session -->
+      <div style="width:236px;">
+        <div style="font-size:13px; font-weight:700; margin-bottom:10px; color:#4a2f1c;">07 · Practice Session</div>
+        <div style="width:236px; height:500px; background:#fff; border:2px solid #999; border-radius:10px; padding:16px 12px; position:relative;">
+          <div style="width:20px; height:20px; border:2px solid #333; border-radius:50%; margin-bottom:14px;"></div>
+          <div style="width:80px; height:36px; background:#333; border-radius:4px; margin:0 auto 10px;"></div>
+          <div style="display:flex; gap:6px; justify-content:center; margin-bottom:14px;">
+            <div style="width:10px; height:10px; border-radius:50%; border:2px solid #333;"></div>
+            <div style="width:10px; height:10px; border-radius:50%; border:2px solid #aaa;"></div>
+            <div style="width:10px; height:10px; border-radius:50%; border:2px solid #aaa;"></div>
+            <div style="width:10px; height:10px; border-radius:50%; border:2px solid #aaa;"></div>
+          </div>
+          <div style="height:6px; background:#ccc; border-radius:3px; margin-bottom:18px;"></div>
+          <div style="height:60px; border:2px solid #333; border-radius:6px; background:repeating-linear-gradient(90deg,#eee,#eee 16px,#fff 16px,#fff 32px); margin-bottom:16px;"></div>
+          <div style="width:60%; height:10px; background:#bbb; border-radius:2px; margin:0 auto 10px;"></div>
+          <div style="position:absolute; bottom:16px; left:12px; right:12px; height:40px; background:#333; border-radius:6px;"></div>
+        </div>
+        <div style="font-size:12px; color:#6b4a30; line-height:1.5; margin-top:10px;">The large dark block is the live BPM readout, and the four dots under it are the beat indicator, so tempo is felt and not just read as a number. The thin bar is the BPM slider. The textured box repeats the tab snippet so no scrolling is needed mid-rep, and the bottom bar ends the session and returns to Home.</div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ============ SECTION 02: HI-FI PROTOTYPE ============ -->
+  <div style="max-width: 1120px; margin: 0 auto; padding: 40px 32px 60px;">
+    <div style="display:flex; align-items:baseline; gap:14px; margin-bottom:8px;">
+      <span style="font-family:'Abril Fatface', serif; font-size:15px; color:#9C2B24;">02</span>
+      <div style="font-family:'Abril Fatface', serif; font-size:34px;">Hi-fi clickable prototype</div>
+    </div>
+    <div style="font-size:16px; color:#4a2f1c; max-width:640px; margin-bottom:8px;">Tap through the real flow: pick a genre → confirm the 30-day lock → set a skill level → home → genre hub → a lesson or song → a practice session with a working metronome.</div>
+    <div style="font-size:13px; color:#8a6a48; margin-bottom:32px;">Demoed with <strong>Soul</strong> content locked in.</div>
+
+    <div style="display:flex; gap:48px; align-items:flex-start; justify-content:center; flex-wrap:wrap;">
+
+      <!-- PHONE FRAME -->
+      <div style="width:340px; flex-shrink:0;">
+        <div style="width:340px; height:716px; background:#241209; border-radius:46px; padding:12px; box-shadow:0 30px 60px rgba(36,18,9,0.35);">
+          <div style="width:100%; height:100%; background:#FBF1DC; border-radius:36px; overflow:hidden; position:relative; display:flex; flex-direction:column;">
+
+            <!-- notch -->
+            <div style="position:absolute; top:0; left:50%; transform:translateX(-50%); width:120px; height:24px; background:#241209; border-radius:0 0 16px 16px; z-index:30;"></div>
+
+            <!-- TOAST -->
+            <sc-if value="{{ toast }}">
+              <div style="position:absolute; top:34px; left:16px; right:16px; background:#1F6F63; color:#FBF1DC; padding:12px 16px; border-radius:14px; font-size:13px; font-weight:700; text-align:center; z-index:40; box-shadow:0 8px 20px rgba(0,0,0,0.25);">Nice rep, streak now {{ streak }} days 🔥</div>
+            </sc-if>
+
+            <!-- SCREEN AREA -->
+            <div style="flex:1; overflow-y:auto; padding-top:30px;">
+
+              <!-- ============ SCREEN: GENRE SELECT ============ -->
+              <sc-if value="{{ screenSelect }}" hint-placeholder-val="{{ true }}">
+                <div style="padding:22px 20px 30px;" data-screen-label="Onboarding: Genre Select">
+                  <div style="font-family:'Abril Fatface', serif; font-size:26px; margin-bottom:6px;">Pick your genre</div>
+                  <div style="font-size:14px; color:#6b4a30; line-height:1.5; margin-bottom:22px;">You'll go deep on one style. It locks for 30 days before you can switch, so choose the one you actually want to sound like.</div>
+
+                  <div style="display:flex; flex-direction:column; gap:10px;">
+                    <sc-for list="{{ genresVM }}" as="g" hint-placeholder-count="5">
+                      <div onClick="{{ g.select }}" style="display:flex; align-items:center; gap:12px; padding:14px; border-radius:14px; cursor:pointer; background:#fff; border:2.5px solid {{ g.borderColor }};">
+                        <div style="width:34px; height:34px; border-radius:9px; background:{{ g.color }}; flex-shrink:0;"></div>
+                        <div style="flex:1;">
+                          <div style="font-size:16px; font-weight:800; margin-bottom:2px;">{{ g.name }}</div>
+                          <div style="font-size:12px; color:#6b4a30; line-height:1.35;">{{ g.desc }}</div>
+                        </div>
+                        <sc-if value="{{ g.selected }}">
+                          <div style="width:22px; height:22px; border-radius:50%; background:{{ g.color }}; color:#fff; font-size:13px; font-weight:800; display:flex; align-items:center; justify-content:center; flex-shrink:0;">✓</div>
+                        </sc-if>
+                      </div>
+                    </sc-for>
+                  </div>
+
+                  <div onClick="{{ confirmGenre }}" style="margin-top:26px; height:50px; border-radius:14px; background:{{ continueBg }}; color:#FBF1DC; display:flex; align-items:center; justify-content:center; font-weight:800; font-size:15px; letter-spacing:0.02em; cursor:pointer;">Continue</div>
+                </div>
+              </sc-if>
+
+              <!-- ============ SCREEN: CONFIRM LOCK ============ -->
+              <sc-if value="{{ screenConfirm }}">
+                <div data-screen-label="Onboarding: Confirm Lock" style="height:100%; display:flex; flex-direction:column;">
+                  <div style="background:{{ genreColor }}; color:#FBF1DC; padding:30px 20px 40px; text-align:center;">
+                    <div style="font-size:12px; letter-spacing:0.14em; text-transform:uppercase; opacity:0.8; margin-bottom:10px;">Locking in</div>
+                    <div style="font-family:'Abril Fatface', serif; font-size:40px;">{{ genreName }}</div>
+                  </div>
+                  <div style="padding:26px 22px; flex:1;">
+                    <div style="font-size:14px; line-height:1.6; color:#3a2716; margin-bottom:18px;">{{ genreDesc }} You'll study {{ genreName }} exclusively for the next 30 days, because that's long enough to build real technique instead of hopping styles every other day.</div>
+                    <div style="background:#fff; border-radius:14px; padding:16px; display:flex; justify-content:space-between; align-items:center; margin-bottom:26px;">
+                      <div>
+                        <div style="font-size:12px; color:#6b4a30; margin-bottom:2px;">Unlocks</div>
+                        <div style="font-size:15px; font-weight:800;">August 9, 2026</div>
+                      </div>
+                      <div style="font-size:12px; color:#6b4a30; text-align:right;">You can<br>always practice<br>anything meanwhile.</div>
+                    </div>
+                    <div onClick="{{ lockGenre }}" style="height:50px; border-radius:14px; background:#241209; color:#FBF1DC; display:flex; align-items:center; justify-content:center; font-weight:800; font-size:15px; cursor:pointer; margin-bottom:12px;">Continue →</div>
+                    <div onClick="{{ backToSelect }}" style="text-align:center; font-size:13px; color:#8a6a48; font-weight:700; cursor:pointer;">Change genre</div>
+                  </div>
+                </div>
+              </sc-if>
+
+              <!-- ============ SCREEN: SKILL LEVEL ============ -->
+              <sc-if value="{{ screenSkill }}">
+                <div data-screen-label="Onboarding: Skill Level" style="padding:22px 20px 30px;">
+                  <div style="font-family:'Abril Fatface', serif; font-size:26px; margin-bottom:6px;">How do you play today?</div>
+                  <div style="font-size:14px; color:#6b4a30; line-height:1.5; margin-bottom:22px;">This tunes which lessons and songs surface first in your {{ genreName }} hub. You can always practice anything, no matter your level.</div>
+
+                  <div style="display:flex; flex-direction:column; gap:10px;">
+                    <sc-for list="{{ levelsVM }}" as="lv" hint-placeholder-count="3">
+                      <div onClick="{{ lv.select }}" style="display:flex; align-items:center; gap:12px; padding:14px; border-radius:14px; cursor:pointer; background:#fff; border:2.5px solid {{ lv.borderColor }};">
+                        <div style="flex:1;">
+                          <div style="font-size:16px; font-weight:800; margin-bottom:2px;">{{ lv.name }}</div>
+                          <div style="font-size:12px; color:#6b4a30; line-height:1.35;">{{ lv.desc }}</div>
+                        </div>
+                        <sc-if value="{{ lv.selected }}">
+                          <div style="width:22px; height:22px; border-radius:50%; background:{{ genreColor }}; color:#fff; font-size:13px; font-weight:800; display:flex; align-items:center; justify-content:center; flex-shrink:0;">✓</div>
+                        </sc-if>
+                      </div>
+                    </sc-for>
+                  </div>
+
+                  <div onClick="{{ continueToHome }}" style="margin-top:26px; height:50px; border-radius:14px; background:{{ levelContinueBg }}; color:#FBF1DC; display:flex; align-items:center; justify-content:center; font-weight:800; font-size:15px; letter-spacing:0.02em; cursor:pointer;">Enter {{ genreNameUpper }} hub →</div>
+                </div>
+              </sc-if>
+
+              <!-- ============ SCREEN: HOME ============ -->
+              <sc-if value="{{ screenHome }}">
+                <div data-screen-label="Home" style="padding:0 20px 30px;">
+                  <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:20px;">
+                    <div style="font-family:'Abril Fatface', serif; font-size:22px;">Tal's BassPractice</div>
+                    <div style="display:flex; align-items:center; gap:6px; background:#fff; padding:7px 12px; border-radius:100px;">
+                      <span style="font-size:14px;">🔥</span>
+                      <span style="font-weight:800; font-size:14px;">{{ streak }}</span>
+                    </div>
+                  </div>
+
+                  <div style="display:flex; gap:8px; margin-bottom:18px; flex-wrap:wrap;">
+                    <div onClick="{{ openHub }}" style="display:inline-flex; align-items:center; gap:8px; background:{{ genreColor }}; color:#FBF1DC; font-size:12px; font-weight:800; letter-spacing:0.04em; padding:7px 12px; border-radius:100px; cursor:pointer;">{{ genreNameUpper }} HUB →</div>
+                    <div style="display:inline-flex; align-items:center; background:#fff; color:#6b4a30; font-size:12px; font-weight:700; padding:7px 12px; border-radius:100px;">{{ levelLabel }}</div>
+                  </div>
+
+                  <div style="font-size:12px; text-transform:uppercase; letter-spacing:0.1em; color:#8a6a48; font-weight:700; margin-bottom:8px;">Today's focus</div>
+                  <div onClick="{{ startPracticeFromHome }}" style="background:#9C2B24; color:#FBF1DC; border-radius:16px; padding:18px; margin-bottom:26px; cursor:pointer;">
+                    <div style="font-size:11px; opacity:0.75; margin-bottom:6px; font-weight:700;">TECHNIQUE · 12 MIN</div>
+                    <div style="font-size:18px; font-weight:800; margin-bottom:10px;">The Jamerson Chromatic Approach</div>
+                    <div style="display:inline-flex; align-items:center; gap:6px; background:rgba(255,255,255,0.18); padding:6px 12px; border-radius:100px; font-size:13px; font-weight:700;">Start session →</div>
+                  </div>
+
+                  <div style="font-size:12px; text-transform:uppercase; letter-spacing:0.1em; color:#8a6a48; font-weight:700; margin-bottom:8px;">Continue learning</div>
+                  <div style="display:flex; flex-direction:column; gap:8px;">
+                    <div onClick="{{ openLesson3 }}" style="display:flex; align-items:center; gap:12px; background:#fff; border-radius:12px; padding:12px;">
+                      <div style="width:36px; height:36px; border-radius:9px; background:#D9A429; flex-shrink:0; display:flex; align-items:center; justify-content:center; color:#fff; font-weight:800; font-size:13px;">H</div>
+                      <div style="flex:1;">
+                        <div style="font-size:14px; font-weight:700;">I–IV–V Soul Progressions</div>
+                        <div style="font-size:12px; color:#8a6a48;">60% complete</div>
+                      </div>
+                      <div style="color:#c9a56a;">›</div>
+                    </div>
+                    <div onClick="{{ openSong2 }}" style="display:flex; align-items:center; gap:12px; background:#fff; border-radius:12px; padding:12px;">
+                      <div style="width:36px; height:36px; border-radius:9px; background:#1F6F63; flex-shrink:0; display:flex; align-items:center; justify-content:center; color:#fff; font-weight:800; font-size:13px;">S</div>
+                      <div style="flex:1;">
+                        <div style="font-size:14px; font-weight:700;">My Girl by The Temptations</div>
+                        <div style="font-size:12px; color:#8a6a48;">Not started</div>
+                      </div>
+                      <div style="color:#c9a56a;">›</div>
+                    </div>
+                    <div onClick="{{ startPracticeFromHome }}" style="display:flex; align-items:center; gap:12px; background:#fff; border-radius:12px; padding:12px;">
+                      <div style="width:36px; height:36px; border-radius:9px; background:#241209; flex-shrink:0; display:flex; align-items:center; justify-content:center; color:#fff; font-weight:800; font-size:13px;">P</div>
+                      <div style="flex:1;">
+                        <div style="font-size:14px; font-weight:700;">Yesterday's practice</div>
+                        <div style="font-size:12px; color:#8a6a48;">8 reps · 92 BPM</div>
+                      </div>
+                      <div style="color:#c9a56a;">›</div>
+                    </div>
+                  </div>
+                </div>
+              </sc-if>
+
+              <!-- ============ SCREEN: GENRE HUB ============ -->
+              <sc-if value="{{ screenHub }}">
+                <div data-screen-label="Genre Hub" style="padding-bottom:30px;">
+                  <div style="background:{{ genreColor }}; color:#FBF1DC; padding:0 20px 20px;">
+                    <div onClick="{{ goHome }}" style="font-size:20px; margin-bottom:10px; cursor:pointer; opacity:0.85;">‹</div>
+                    <div style="font-family:'Abril Fatface', serif; font-size:32px; margin-bottom:6px;">{{ genreName }}</div>
+                    <div style="display:flex; align-items:center; gap:8px; font-size:12px; font-weight:700;">
+                      <span style="background:rgba(0,0,0,0.22); padding:4px 10px; border-radius:100px;">Locked</span>
+                      <span style="opacity:0.85;">Unlocks in 19 days · Aug 9</span>
+                    </div>
+                  </div>
+
+                  <div style="display:flex; gap:8px; padding:16px 20px;">
+                    <div onClick="{{ setHubTabHistory }}" style="flex:1; text-align:center; padding:9px 0; border-radius:100px; font-size:13px; font-weight:800; cursor:pointer; background:{{ historyTabBg }}; color:{{ historyTabColor }};">History</div>
+                    <div onClick="{{ setHubTabTheory }}" style="flex:1; text-align:center; padding:9px 0; border-radius:100px; font-size:13px; font-weight:800; cursor:pointer; background:{{ theoryTabBg }}; color:{{ theoryTabColor }};">Theory</div>
+                    <div onClick="{{ setHubTabSongs }}" style="flex:1; text-align:center; padding:9px 0; border-radius:100px; font-size:13px; font-weight:800; cursor:pointer; background:{{ songsTabBg }}; color:{{ songsTabColor }};">Songs</div>
+                  </div>
+
+                  <div style="padding:0 20px;">
+                    <sc-if value="{{ isHistory }}">
+                      <div style="font-size:14px; line-height:1.65; color:#3a2716;">
+                        <p style="margin:0 0 14px;">Soul basslines were built inside Motown's Studio A in Detroit, where a house band later nicknamed the Funk Brothers cut hundreds of hits through the 1960s.</p>
+                        <p style="margin:0;">Bassist James Jamerson led the sound, because his lines were melodic and syncopated, talking back to the vocal instead of just holding down the root. That phrasing is still the reference point for soul bass today.</p>
+                      </div>
+                    </sc-if>
+                    <sc-if value="{{ isTheory }}">
+                      <div style="display:flex; flex-direction:column; gap:8px;">
+                        <sc-for list="{{ lessonsVM }}" as="l" hint-placeholder-count="3">
+                          <div onClick="{{ l.open }}" style="display:flex; align-items:center; gap:12px; background:#fff; border-radius:12px; padding:12px; cursor:pointer;">
+                            <div style="width:36px; height:36px; border-radius:9px; background:{{ genreColor }}; flex-shrink:0; display:flex; align-items:center; justify-content:center; color:#fff; font-weight:800; font-size:14px;">{{ l.initial }}</div>
+                            <div style="flex:1;">
+                              <div style="font-size:14px; font-weight:700; margin-bottom:2px;">{{ l.title }}</div>
+                              <div style="font-size:12px; color:#8a6a48;">{{ l.tag }} · {{ l.minutes }} min</div>
+                            </div>
+                            <div style="color:#c9a56a;">›</div>
+                          </div>
+                        </sc-for>
+                      </div>
+                    </sc-if>
+                    <sc-if value="{{ isSongs }}">
+                      <div style="display:flex; flex-direction:column; gap:8px;">
+                        <sc-for list="{{ songsVM }}" as="sn" hint-placeholder-count="3">
+                          <div onClick="{{ sn.open }}" style="display:flex; align-items:center; gap:12px; background:#fff; border-radius:12px; padding:12px; cursor:pointer;">
+                            <div style="flex:1;">
+                              <div style="font-size:14px; font-weight:700; margin-bottom:2px;">{{ sn.title }}</div>
+                              <div style="font-size:12px; color:#8a6a48;">{{ sn.artist }} · {{ sn.keySig }} · {{ sn.tempo }} BPM · {{ sn.level }}</div>
+                            </div>
+                            <div style="color:#c9a56a;">›</div>
+                          </div>
+                        </sc-for>
+                      </div>
+                    </sc-if>
+                  </div>
+                </div>
+              </sc-if>
+
+              <!-- ============ SCREEN: LESSON DETAIL ============ -->
+              <sc-if value="{{ screenLesson }}">
+                <div data-screen-label="Lesson Detail" style="padding:0 20px 30px;">
+                  <div onClick="{{ backToHub }}" style="font-size:20px; margin-bottom:14px; cursor:pointer; color:{{ genreColor }};">‹</div>
+                  <div style="display:inline-block; background:{{ genreColor }}; color:#FBF1DC; font-size:11px; font-weight:800; letter-spacing:0.05em; padding:5px 10px; border-radius:100px; margin-bottom:12px;">{{ activeLesson.tag }}</div>
+                  <div style="font-size:22px; font-weight:800; margin-bottom:12px; line-height:1.25;">{{ activeLesson.title }}</div>
+                  <div style="font-size:14px; line-height:1.6; color:#3a2716; margin-bottom:22px;">{{ activeLesson.body }}</div>
+
+                  <div style="font-size:12px; text-transform:uppercase; letter-spacing:0.1em; color:#8a6a48; font-weight:700; margin-bottom:10px;">Fretboard diagram</div>
+                  <div style="background:#fff; border-radius:14px; padding:18px 14px 14px; margin-bottom:24px;">
+                    <div style="position:relative; height:140px; background:#241209; border-radius:8px;">
+                      <sc-for list="{{ fretLines }}" as="fl" hint-placeholder-count="4">
+                        <div style="position:absolute; left:0; right:0; height:1px; background:rgba(255,255,255,0.25); top:{{ fl.top }};"></div>
+                      </sc-for>
+                      <sc-for list="{{ fretCols }}" as="fc" hint-placeholder-count="6">
+                        <div style="position:absolute; top:0; bottom:0; width:1px; background:rgba(255,255,255,0.18); left:{{ fc.left }};"></div>
+                      </sc-for>
+                      <sc-for list="{{ neckDots }}" as="dot" hint-placeholder-count="8">
+                        <div style="position:absolute; width:20px; height:20px; border-radius:50%; background:{{ genreColor }}; left:{{ dot.left }}; top:{{ dot.top }}; transform:translate(-50%,-50%); display:flex; align-items:center; justify-content:center; color:#fff; font-size:9px; font-weight:800;">{{ dot.label }}</div>
+                      </sc-for>
+                    </div>
+                    <div style="display:flex; justify-content:space-between; font-size:10px; color:#8a6a48; margin-top:8px; font-weight:700;">
+                      <span>G</span><span>D</span><span>A</span><span>E</span>
+                    </div>
+                  </div>
+
+                  <div onClick="{{ startPracticeFromLesson }}" style="height:50px; border-radius:14px; background:{{ genreColor }}; color:#FBF1DC; display:flex; align-items:center; justify-content:center; font-weight:800; font-size:15px; cursor:pointer;">Practice this →</div>
+                </div>
+              </sc-if>
+
+              <!-- ============ SCREEN: SONG DETAIL ============ -->
+              <sc-if value="{{ screenSong }}">
+                <div data-screen-label="Song Detail" style="padding:0 20px 30px;">
+                  <div onClick="{{ backToHub }}" style="font-size:20px; margin-bottom:14px; cursor:pointer; color:{{ genreColor }};">‹</div>
+                  <div style="font-size:22px; font-weight:800; margin-bottom:2px;">{{ activeSong.title }}</div>
+                  <div style="font-size:14px; color:#8a6a48; font-weight:600; margin-bottom:12px;">{{ activeSong.artist }}</div>
+                  <div style="display:flex; gap:8px; margin-bottom:20px; flex-wrap:wrap;">
+                    <span style="background:#fff; font-size:12px; font-weight:700; padding:6px 11px; border-radius:100px;">Key {{ activeSong.keySig }}</span>
+                    <span style="background:#fff; font-size:12px; font-weight:700; padding:6px 11px; border-radius:100px;">{{ activeSong.tempo }} BPM</span>
+                    <span style="background:#fff; font-size:12px; font-weight:700; padding:6px 11px; border-radius:100px;">{{ activeSong.level }}</span>
+                  </div>
+
+                  <div style="font-size:12px; text-transform:uppercase; letter-spacing:0.1em; color:#8a6a48; font-weight:700; margin-bottom:8px;">Tab</div>
+                  <pre style="background:#241209; color:#f0dcb0; font-size:11.5px; line-height:1.7; padding:14px; border-radius:12px; overflow-x:auto; margin:0 0 20px; font-family:'SF Mono', Consolas, monospace;">{{ activeSong.tab }}</pre>
+
+                  <div style="font-size:12px; text-transform:uppercase; letter-spacing:0.1em; color:#8a6a48; font-weight:700; margin-bottom:8px;">Curated lesson</div>
+                  <a href="{{ activeSong.ytUrl }}" target="_blank" style="text-decoration:none; display:block; margin-bottom:22px;">
+                    <div style="background:linear-gradient(135deg, {{ genreColor }}, #241209); border-radius:14px; height:100px; display:flex; align-items:center; justify-content:center; margin-bottom:8px; position:relative;">
+                      <div style="width:0; height:0; border-top:11px solid transparent; border-bottom:11px solid transparent; border-left:18px solid #FBF1DC;"></div>
+                    </div>
+                    <div style="font-size:13px; font-weight:700; color:#241209;">Watch a performance breakdown on YouTube ↗</div>
+                  </a>
+
+                  <div onClick="{{ startPracticeFromSong }}" style="height:50px; border-radius:14px; background:{{ genreColor }}; color:#FBF1DC; display:flex; align-items:center; justify-content:center; font-weight:800; font-size:15px; cursor:pointer;">Practice this song →</div>
+                </div>
+              </sc-if>
+
+              <!-- ============ SCREEN: PRACTICE SESSION ============ -->
+              <sc-if value="{{ screenPractice }}">
+                <div data-screen-label="Practice Session" style="padding:0 20px 30px;">
+                  <div onClick="{{ backFromPractice }}" style="font-size:20px; margin-bottom:10px; cursor:pointer; color:{{ genreColor }};">‹</div>
+                  <div style="font-size:12px; text-transform:uppercase; letter-spacing:0.08em; color:#8a6a48; font-weight:700; margin-bottom:2px;">Practicing</div>
+                  <div style="font-size:18px; font-weight:800; margin-bottom:20px;">{{ practiceTitle }}</div>
+
+                  <div style="background:#241209; border-radius:16px; padding:20px; margin-bottom:20px; text-align:center;">
+                    <div style="font-size:44px; font-weight:800; color:#FBF1DC; line-height:1;">{{ bpm }}</div>
+                    <div style="font-size:11px; color:#c9a56a; font-weight:700; letter-spacing:0.08em; margin-bottom:14px;">BPM</div>
+                    <input type="range" min="50" max="160" value="{{ bpm }}" onChange="{{ onBpmChange }}" style="width:100%; margin-bottom:16px;">
+                    <div style="display:flex; align-items:center; justify-content:center; gap:16px;">
+                      <sc-for list="{{ beatDots }}" as="bd" hint-placeholder-count="4">
+                        <div style="width:12px; height:12px; border-radius:50%; background:{{ bd.color }}; transform:{{ bd.scale }};"></div>
+                      </sc-for>
+                    </div>
+                    <div onClick="{{ toggleMetronome }}" style="margin-top:16px; display:inline-flex; align-items:center; gap:8px; background:{{ genreColor }}; color:#fff; padding:9px 20px; border-radius:100px; font-size:13px; font-weight:800; cursor:pointer;">{{ metronomeLabel }}</div>
+                  </div>
+
+                  <div style="font-size:12px; text-transform:uppercase; letter-spacing:0.1em; color:#8a6a48; font-weight:700; margin-bottom:8px;">Loop snippet</div>
+                  <pre style="background:#fff; font-size:11.5px; line-height:1.7; padding:14px; border-radius:12px; overflow-x:auto; margin:0 0 22px; font-family:'SF Mono', Consolas, monospace;">{{ activeSong.tab }}</pre>
+
+                  <div style="display:flex; align-items:center; justify-content:space-between; background:#fff; border-radius:14px; padding:14px 16px; margin-bottom:14px;">
+                    <div onClick="{{ decReps }}" style="width:34px; height:34px; border-radius:50%; background:#f0dcb0; display:flex; align-items:center; justify-content:center; font-weight:800; font-size:18px; cursor:pointer;">–</div>
+                    <div style="text-align:center;">
+                      <div style="font-size:16px; font-weight:800;">Rep {{ reps }} of 8</div>
+                    </div>
+                    <div onClick="{{ incReps }}" style="width:34px; height:34px; border-radius:50%; background:{{ genreColor }}; color:#fff; display:flex; align-items:center; justify-content:center; font-weight:800; font-size:18px; cursor:pointer;">+</div>
+                  </div>
+                  <div style="display:flex; gap:5px; margin-bottom:24px;">
+                    <sc-for list="{{ repDots }}" as="rd" hint-placeholder-count="8">
+                      <div style="flex:1; height:5px; border-radius:3px; background:{{ rd.color }};"></div>
+                    </sc-for>
+                  </div>
+
+                  <div onClick="{{ finishSession }}" style="height:50px; border-radius:14px; background:#241209; color:#FBF1DC; display:flex; align-items:center; justify-content:center; font-weight:800; font-size:15px; cursor:pointer;">Finish session</div>
+                </div>
+              </sc-if>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- FLOW LEGEND -->
+      <div style="max-width:360px; padding-top:8px;">
+        <div style="font-size:12px; text-transform:uppercase; letter-spacing:0.1em; color:#8a6a48; font-weight:700; margin-bottom:14px;">Connected flow</div>
+        <div style="display:flex; flex-direction:column; gap:10px; font-size:14px; font-weight:700;">
+          <div>1. Genre select <span style="color:#8a6a48; font-weight:500;">: tap any genre card</span></div>
+          <div>2. Confirm 30-day lock <span style="color:#8a6a48; font-weight:500;">: "Continue"</span></div>
+          <div>3. Skill level <span style="color:#8a6a48; font-weight:500;">: Beginner, Intermediate, or Advanced</span></div>
+          <div>4. Home <span style="color:#8a6a48; font-weight:500;">: streak, today's focus, continue list</span></div>
+          <div>5. Genre hub <span style="color:#8a6a48; font-weight:500;">: History / Theory / Songs tabs</span></div>
+          <div>6. Lesson or song detail <span style="color:#8a6a48; font-weight:500;">: diagram, tab, YouTube link</span></div>
+          <div>7. Practice session <span style="color:#8a6a48; font-weight:500;">: live metronome, rep tracker</span></div>
+          <div>8. Finish → back to Home <span style="color:#8a6a48; font-weight:500;">: streak increments</span></div>
+        </div>
+        <div style="margin-top:24px; font-size:13px; color:#6b4a30; line-height:1.6;">The metronome and BPM slider are fully live, so drag the slider and hit play to hear the tempo change reflected in the beat indicator.</div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ============ SECTION 03: UX METHODOLOGY ============ -->
+  <div style="max-width: 1120px; margin: 0 auto; padding: 40px 32px 100px;">
+    <div style="display:flex; align-items:baseline; gap:14px; margin-bottom:8px;">
+      <span style="font-family:'Abril Fatface', serif; font-size:15px; color:#9C2B24;">03</span>
+      <div style="font-family:'Abril Fatface', serif; font-size:34px;">Rationale behind the different Screens</div>
+    </div>
+    <div style="font-size:16px; color:#4a2f1c; max-width:680px; margin-bottom:36px;">The principles behind each screen's design decisions.</div>
+
+    <div style="display:grid; grid-template-columns:1fr 1fr; gap:16px; margin-bottom:40px;">
+      <sc-for list="{{ principles }}" as="p" hint-placeholder-count="6">
+        <div style="background:#FBF1DC; border-radius:14px; padding:18px 20px;">
+          <div style="font-size:15px; font-weight:800; margin-bottom:6px;">{{ p.title }}</div>
+          <div style="font-size:14px; line-height:1.55; color:#4a2f1c;">{{ p.body }}</div>
+        </div>
+      </sc-for>
+    </div>
+
+    <div style="font-size:20px; font-weight:800; margin-bottom:16px;">Per-screen rationale</div>
+    <div style="display:flex; flex-direction:column; gap:18px;">
+      <sc-for list="{{ screenNotes }}" as="sn2" hint-placeholder-count="6">
+        <div style="border-top:1px solid rgba(36,18,9,0.15); padding-top:16px;">
+          <div style="font-size:15px; font-weight:800; margin-bottom:4px;">{{ sn2.screen }}</div>
+          <div style="font-size:14px; line-height:1.6; color:#4a2f1c;">{{ sn2.note }}</div>
+        </div>
+      </sc-for>
+    </div>
+  </div>
+
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  state = {
+    screen: 'select',
+    genre: null,
+    level: null,
+    hubTab: 'history',
+    activeLesson: null,
+    activeSong: null,
+    practiceSource: null,
+    bpm: 92,
+    playing: false,
+    beatIndex: 0,
+    reps: 3,
+    streak: 12,
+    toast: false,
+  };
+
+  genres = [
+    { id: 'soul', name: 'Soul', color: '#9C2B24', desc: 'Motown grooves with a gospel-rooted feel and melodic walking lines.' },
+    { id: 'funk', name: 'Funk', color: '#D9A429', desc: 'Syncopated 16ths, ghost notes, locked to the one.' },
+    { id: 'rock', name: 'Rock', color: '#3D2A1A', desc: 'Driving eighths, root-fifth power, straight-ahead drive.' },
+    { id: 'jazz', name: 'Jazz', color: '#1F6F63', desc: 'Walking quarter notes, extended chords, swing feel.' },
+    { id: 'reggae', name: 'Reggae', color: '#2F7D3C', desc: 'One-drop rhythm, deep pocket, dub-informed space.' },
+  ];
+
+  levels = [
+    { id: 'beginner', name: 'Beginner', desc: "New to bass, or less than a year in, so lessons lead with open-string patterns and slow tempos." },
+    { id: 'intermediate', name: 'Intermediate', desc: 'Comfortable with scales and simple songs, so lessons add chromatic and syncopated phrasing.' },
+    { id: 'advanced', name: 'Advanced', desc: 'Confident improvising, so lessons focus on genre-specific nuance and faster tempos.' },
+  ];
+
+  lessons = [
+    { id: 'l1', initial: 'S', title: 'Major & Minor Pentatonic Groove Boxes', tag: 'Scale', minutes: 8,
+      body: "The minor pentatonic \u201cgroove box\u201d is the scaffolding under almost every Motown bassline. Anchor your first finger on the root and let the box shape guide call-and-response phrasing against the vocal." },
+    { id: 'l2', initial: 'J', title: 'The Jamerson Chromatic Approach', tag: 'Technique', minutes: 12,
+      body: "James Jamerson connected pentatonic ideas with chromatic passing tones, sliding into chord tones from a half step below or above. It's what makes his lines feel like they're singing along with the melody, not just holding the root." },
+    { id: 'l3', initial: 'H', title: 'I\u2013IV\u2013V Soul Progressions', tag: 'Harmony', minutes: 10,
+      body: "Most Motown and Stax sides ride on I\u2013IV\u2013V changes dressed up with passing chords. Learn to hear where the IV wants to resolve to the V, and your ear starts predicting changes before they land." },
+  ];
+
+  songs = [
+    { id: 's1', title: "What's Going On", artist: 'Marvin Gaye', keySig: 'E\u266dm', tempo: 100, level: 'Intermediate',
+      tab: "G|----------------|\nD|--3-5-3---3-5-3-|\nA|3-------3-------|\nE|----------------|",
+      ytUrl: 'https://www.youtube.com/results?search_query=marvin+gaye+whats+going+on+bass+breakdown' },
+    { id: 's2', title: 'My Girl', artist: 'The Temptations', keySig: 'C', tempo: 104, level: 'Beginner',
+      tab: "G|----------------|\nD|----------------|\nA|--3---3---3---3-|\nE|0-------0-------|",
+      ytUrl: 'https://www.youtube.com/results?search_query=the+temptations+my+girl+bass+breakdown' },
+    { id: 's3', title: "Ain't No Mountain High Enough", artist: 'Marvin Gaye & Tammi Terrell', keySig: 'A\u266d', tempo: 122, level: 'Intermediate',
+      tab: "G|-------5-7------|\nD|---3-5----------|\nA|1---------1-3-1-|\nE|----------------|",
+      ytUrl: 'https://www.youtube.com/results?search_query=aint+no+mountain+high+enough+bass+breakdown' },
+  ];
+
+  neckDotsRaw = [
+    { left: '8%', top: '18%', label: '1' }, { left: '8%', top: '68%', label: '4' },
+    { left: '30%', top: '43%', label: 'b3' }, { left: '30%', top: '93%', label: 'b7' },
+    { left: '52%', top: '18%', label: '5' }, { left: '52%', top: '68%', label: '1' },
+    { left: '74%', top: '43%', label: '2' }, { left: '74%', top: '93%', label: '4' },
+  ];
+
+  principles = [
+    { title: "Hick's Law in genre selection", body: 'Five clearly differentiated genre cards, single-select, immediate checkmark feedback. There are few enough choices that deciding takes seconds, because more than five would slow the decision down.' },
+    { title: 'Commitment device (the 30-day lock)', body: 'Locking the genre removes daily "should I switch styles?" friction. The confirm screen states the exact unlock date up front so the constraint feels transparent and not punitive.' },
+    { title: 'Progressive disclosure', body: 'Depth is revealed step by step -> genre -> hub tabs -> single lesson/song -> practice -> so no screen ever shows more than one decision’s worth of information.' },
+    { title: 'Habit & streak mechanics', body: 'A persistent streak counter and a single pre-chosen "Today’s Focus" card remove the first-session decision entirely, borrowing the low-friction restart pattern from habit apps like Duolingo (which was part of the inspiration).' },
+    { title: 'Consistency (Nielsen heuristic)', body: 'Lesson rows, song rows, and continue-learning rows all share one list pattern across Home, Hub, and detail screens, so recognition, not re-learning, carries the user between screens.' },
+    { title: 'Visibility of system status', body: 'Lock countdown, lesson progress, rep counters, and a live beat indicator all surface current state at a glance, satisfying Nielsen\u2019s visibility heuristic throughout.' },
+    { title: 'Lightweight self-assessment', body: 'A single-tap skill pick between three levels lets lesson and song difficulty adapt right away, because a long placement quiz at onboarding would add friction before the user has done anything yet.' },
+  ];
+
+  screenNotes = [
+    { screen: 'Onboarding : Genre Select', note: 'Bounded to five options with one-line descriptors so the choice is scannable in seconds (Hick’s Law). Selecting shows an immediate checkmark before the user commits via "Continue" -> feedback before consequence.' },
+    { screen: 'Onboarding : Confirm Lock', note: 'A dedicated confirmation step, separate from selection, exists purely to explain the 30-day commitment device with the exact unlock date. Removing ambiguity here builds trust before the constraint kicks in.' },
+    { screen: 'Onboarding : Skill Level', note: 'Placed right after the lock, once, because it only needs answering once per 30-day cycle. Three broad bands keep it a snap decision rather than a quiz, and the level then quietly reorders which lessons and songs surface first in the hub.' },
+    { screen: 'Home', note: 'Leads with the streak and one pre-decided "Today’s Focus" card, not a menu.  This is the habit-formation surface, designed so returning users can start a session in one tap with zero decisions.' },
+    { screen: 'Genre Hub', note: 'History / Theory / Songs as a segmented control (not a deep menu) keeps the genre\u2019s full curriculum reachable in one view, while the lock banner keeps the 30-day commitment visible as ambient status.' },
+    { screen: 'Lesson Detail', note: 'One concept per screen, short theory text plus a single fretboard diagram which follows progressive disclosure: enough to practice immediately, not a full textbook chapter.' },
+    { screen: 'Song Detail', note: 'Tab notation and the curated YouTube link sit side by side so notation (what to play) and performance reference (how it should feel) reinforce each other before practicing.' },
+    { screen: 'Practice Session', note: 'Direct manipulation drives the metronome: dragging the BPM slider immediately changes the live beat indicator, giving instant feedback loops (per Nielsen) instead of a settings-then-apply pattern. The rep tracker turns an open-ended practice into a finishable unit of work.' },
+  ];
+
+  selectGenre = (id) => this.setState({ genre: id });
+  confirmGenre = () => this.setState({ screen: 'confirm' });
+  backToSelect = () => this.setState({ screen: 'select' });
+  lockGenre = () => this.setState({ screen: 'skill', genre: this.state.genre || 'soul' });
+  selectLevel = (id) => this.setState({ level: id });
+  continueToHome = () => this.setState({ screen: 'home', level: this.state.level || 'beginner' });
+  goHome = () => this.setState({ screen: 'home' });
+  openHub = () => this.setState({ screen: 'hub' });
+  setHubTab = (t) => this.setState({ hubTab: t });
+  openLesson = (l) => this.setState({ screen: 'lesson', activeLesson: l });
+  openSong = (s) => this.setState({ screen: 'song', activeSong: s });
+  backToHub = () => this.setState({ screen: 'hub' });
+
+  startPracticeFromLesson = () => this.setState({ screen: 'practice', practiceSource: { type: 'lesson', title: (this.state.activeLesson || this.lessons[1]).title } });
+  startPracticeFromSong = () => this.setState({ screen: 'practice', practiceSource: { type: 'song', title: (this.state.activeSong || this.songs[0]).title } });
+  startPracticeFromHome = () => this.setState({ screen: 'practice', practiceSource: { type: 'lesson', title: 'The Jamerson Chromatic Approach' } });
+
+  backFromPractice = () => {
+    clearInterval(this._timer);
+    const src = this.state.practiceSource;
+    this.setState({ screen: src && src.type === 'song' ? 'song' : (src && src.type === 'lesson' ? 'lesson' : 'home'), playing: false });
+  };
+
+  toggleMetronome = () => {
+    if (this.state.playing) { clearInterval(this._timer); this.setState({ playing: false }); return; }
+    this.setState({ playing: true, beatIndex: 0 });
+    this._timer = setInterval(() => this.setState(s => ({ beatIndex: (s.beatIndex + 1) % 4 })), 60000 / this.state.bpm);
+  };
+
+  onBpmChange = (e) => {
+    const v = Number(e.target.value);
+    this.setState({ bpm: v });
+    if (this.state.playing) {
+      clearInterval(this._timer);
+      this._timer = setInterval(() => this.setState(s => ({ beatIndex: (s.beatIndex + 1) % 4 })), 60000 / v);
+    }
+  };
+
+  incReps = () => this.setState(s => ({ reps: Math.min(8, s.reps + 1) }));
+  decReps = () => this.setState(s => ({ reps: Math.max(1, s.reps - 1) }));
+
+  finishSession = () => {
+    clearInterval(this._timer);
+    this.setState(s => ({ screen: 'home', playing: false, streak: s.streak + 1, toast: true }));
+    setTimeout(() => this.setState({ toast: false }), 3500);
+  };
+
+  componentWillUnmount() { clearInterval(this._timer); }
+
+  renderVals() {
+    const s = this.state;
+    const genreId = s.genre || 'soul';
+    const selected = this.genres.find(g => g.id === genreId) || this.genres[0];
+
+    const genresVM = this.genres.map(g => ({
+      ...g,
+      selected: s.genre === g.id,
+      borderColor: s.genre === g.id ? g.color : 'rgba(36,18,9,0.12)',
+      select: () => this.selectGenre(g.id),
+    }));
+
+    const levelsVM = this.levels.map(lv => ({
+      ...lv,
+      selected: (s.level || 'beginner') === lv.id,
+      borderColor: (s.level || 'beginner') === lv.id ? selected.color : 'rgba(36,18,9,0.12)',
+      select: () => this.selectLevel(lv.id),
+    }));
+    const levelName = (this.levels.find(lv => lv.id === (s.level || 'beginner')) || this.levels[0]).name;
+
+    const lessonsVM = this.lessons.map(l => ({ ...l, open: () => this.openLesson(l) }));
+    const songsVM = this.songs.map(sn => ({ ...sn, open: () => this.openSong(sn) }));
+
+    const activeLesson = s.activeLesson || this.lessons[1];
+    const activeSong = s.activeSong || this.songs[0];
+
+    const beatDots = [0, 1, 2, 3].map(i => ({
+      color: s.playing && s.beatIndex === i ? selected.color : 'rgba(255,255,255,0.25)',
+      scale: s.playing && s.beatIndex === i ? 'scale(1.35)' : 'scale(1)',
+    }));
+
+    const repDots = Array.from({ length: 8 }, (_, i) => ({ color: i < s.reps ? selected.color : 'rgba(36,18,9,0.12)' }));
+
+    const fretLines = [0, 1, 2, 3].map(i => ({ top: (i * 33) + '%' }));
+    const fretCols = [0, 1, 2, 3, 4, 5].map(i => ({ left: (i * 20) + '%' }));
+
+    return {
+      screenSelect: s.screen === 'select',
+      screenConfirm: s.screen === 'confirm',
+      screenSkill: s.screen === 'skill',
+      screenHome: s.screen === 'home',
+      screenHub: s.screen === 'hub',
+      screenLesson: s.screen === 'lesson',
+      screenSong: s.screen === 'song',
+      screenPractice: s.screen === 'practice',
+
+      genresVM,
+      continueBg: s.genre ? selected.color : 'rgba(36,18,9,0.3)',
+      genreName: selected.name,
+      genreNameUpper: selected.name.toUpperCase(),
+      genreColor: selected.color,
+      genreDesc: selected.desc,
+
+      levelsVM,
+      levelLabel: levelName,
+      levelContinueBg: selected.color,
+
+      hubTab: s.hubTab,
+      isHistory: s.hubTab === 'history',
+      isTheory: s.hubTab === 'theory',
+      isSongs: s.hubTab === 'songs',
+      historyTabBg: s.hubTab === 'history' ? '#241209' : '#fff',
+      historyTabColor: s.hubTab === 'history' ? '#FBF1DC' : '#241209',
+      theoryTabBg: s.hubTab === 'theory' ? '#241209' : '#fff',
+      theoryTabColor: s.hubTab === 'theory' ? '#FBF1DC' : '#241209',
+      songsTabBg: s.hubTab === 'songs' ? '#241209' : '#fff',
+      songsTabColor: s.hubTab === 'songs' ? '#FBF1DC' : '#241209',
+
+      lessonsVM,
+      songsVM,
+      activeLesson,
+      activeSong,
+      neckDots: this.neckDotsRaw,
+      fretLines,
+      fretCols,
+
+      bpm: s.bpm,
+      playing: s.playing,
+      beatDots,
+      metronomeLabel: s.playing ? '⏸ Stop' : '▶ Play',
+      reps: s.reps,
+      repDots,
+      streak: s.streak,
+      toast: s.toast,
+      practiceTitle: s.practiceSource ? s.practiceSource.title : 'Free Practice',
+
+      principles: this.principles,
+      screenNotes: this.screenNotes,
+
+      confirmGenre: this.confirmGenre,
+      backToSelect: this.backToSelect,
+      lockGenre: this.lockGenre,
+      continueToHome: this.continueToHome,
+      goHome: this.goHome,
+      openHub: this.openHub,
+      setHubTabHistory: () => this.setHubTab('history'),
+      setHubTabTheory: () => this.setHubTab('theory'),
+      setHubTabSongs: () => this.setHubTab('songs'),
+      backToHub: this.backToHub,
+      openLesson3: () => this.openLesson(this.lessons[2]),
+      openSong2: () => this.openSong(this.songs[1]),
+      startPracticeFromLesson: this.startPracticeFromLesson,
+      startPracticeFromSong: this.startPracticeFromSong,
+      startPracticeFromHome: this.startPracticeFromHome,
+      backFromPractice: this.backFromPractice,
+      toggleMetronome: this.toggleMetronome,
+      onBpmChange: this.onBpmChange,
+      incReps: this.incReps,
+      decReps: this.decReps,
+      finishSession: this.finishSession,
+    };
+  }
+}
+
+</script>
+</body>
+</html>
