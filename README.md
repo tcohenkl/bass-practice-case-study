@@ -1,4 +1,4 @@
-# Tal's BassPractice — UX Case Study
+# Tal's BassPractice 
 
 An adaptive electric bass practice app. A user picks one musical genre, it locks for 30 days so they build real depth instead of hopping styles, and the app teaches that genre's history, theory, song tabs, and curated video lessons.
 
