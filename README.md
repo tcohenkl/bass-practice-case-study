@@ -50,8 +50,8 @@ The connected flow, demoed with **Soul** locked in:
 | ![Genre select](screenshots/02-hifi-genre-select.png) | ![Confirm 30-day lock](screenshots/03-hifi-confirm-lock.png) |
 | ![Skill level](screenshots/04-hifi-skill-level.png) | ![Home](screenshots/05-hifi-home.png) |
 | ![Genre hub, history tab](screenshots/06-hifi-genre-hub-history.png) | ![Genre hub, theory tab](screenshots/07-hifi-genre-hub-theory.png) |
-| ![Lesson detail](screenshots/08-hifi-lesson-detail.png) | ![Song detail](screenshots/09-hifi-song-detail.png) |
-| ![Practice session, metronome running](screenshots/10-hifi-practice-session.png) | |
+| ![Genre hub, songs tab](screenshots/08-hifi-genre-hub-songs.png) | ![Lesson detail](screenshots/09-hifi-lesson-detail.png) |
+| ![Song detail](screenshots/10-hifi-song-detail.png) | ![Practice session, metronome running](screenshots/11-hifi-practice-session.png) |
 
 The metronome and BPM slider are fully live: dragging the slider and hitting play changes the tempo reflected in the beat indicator in real time.
 
@@ -61,7 +61,7 @@ The `prototype/` folder holds the actual working file (`index.dc.html` + `suppor
 
 ## 3. UX methodology
 
-![UX methodology principles](screenshots/11-ux-methodology-principles.png)
+![UX methodology principles](screenshots/12-ux-methodology-principles.png)
 
 **Hick's Law in genre selection.** Five clearly differentiated genre cards, single-select, with immediate checkmark feedback. There are few enough choices that deciding takes seconds, because more than five would slow the decision down.
 
@@ -79,7 +79,7 @@ The `prototype/` folder holds the actual working file (`index.dc.html` + `suppor
 
 ### Per-screen rationale
 
-![Per-screen rationale](screenshots/12-ux-methodology-per-screen.png)
+![Per-screen rationale](screenshots/13-ux-methodology-per-screen.png)
 
 - **Onboarding: Genre Select** : Bounded to five options with one-line descriptors so the choice is scannable in seconds (Hick's Law). Selecting shows an immediate checkmark before the user commits via "Continue," feedback before consequence.
 - **Onboarding: Confirm Lock** : A dedicated confirmation step, separate from selection, exists purely to explain the 30-day commitment device with the exact unlock date. Removing ambiguity here builds trust before the constraint kicks in.
