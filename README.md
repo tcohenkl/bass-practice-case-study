@@ -2,9 +2,14 @@
 
 An adaptive electric bass practice app. A user picks one musical genre, it locks for 30 days so they build real depth instead of hopping styles, and the app teaches that genre's history, theory, song tabs, and curated video lessons.
 
+**🔗 [Try the live clickable prototype →](https://tcohenkl.github.io/bass-practice-case-study/)**
+
 **Role:** Product & UX design (solo)
 **Scope:** Low-fidelity wireframes → high-fidelity clickable prototype
+**Tools:** Figma (visual design) → Claude Code (front-end implementation)
 **Deliverable:** Portfolio case study
+
+**Why I built this:** I'm inconsistent about practicing bass, so I designed an app that forces me to commit to one genre at a time instead of style-hopping, and pairs practice with the music history behind it, since that context is part of what keeps me engaged. It's a solo project built to sharpen UX/UI skills end-to-end: research framing, wireframes, hi-fi design, and a working interactive build.
 
 ---
 
@@ -92,3 +97,4 @@ The `prototype/` folder holds the actual working file (`index.dc.html` + `suppor
 - `README.md` — this write-up
 - `screenshots/` — exported PNGs of every wireframe and prototype state
 - `prototype/index.dc.html` + `prototype/support.js` — the working clickable prototype
+- `index.html` — redirects the [GitHub Pages link](https://tcohenkl.github.io/bass-practice-case-study/) straight into the prototype
