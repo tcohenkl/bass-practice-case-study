@@ -2,7 +2,7 @@
 
 An adaptive electric bass practice app. A user picks one musical genre, it locks for 30 days so they build real depth instead of hopping styles, and the app teaches that genre's history, theory, song tabs, and curated video lessons.
 
-**🔗 [Try the live clickable prototype →](https://tcohenkl.github.io/bass-practice-case-study/)**
+**[Try the live clickable prototype →](https://tcohenkl.github.io/bass-practice-case-study/)**
 
 **Role:** Product & UX design (solo)
 **Scope:** Low-fidelity wireframes → high-fidelity clickable prototype
